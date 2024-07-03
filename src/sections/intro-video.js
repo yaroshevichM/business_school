@@ -31,7 +31,7 @@ const IntroVideo = () => {
               color="#fff"
             />
             <ResponsiveIframe
-              src="https://www.youtube.com/embed/Phg6apvSBW8?si=vSuMkepQJbyFjzHO"
+              src="https://www.youtube.com/embed/Y1ZnNY3I-2E?si=3aKREfJOdOiYzkuq"
               allow="autoplay; fullscreen"
               allowFullScreen
             />
