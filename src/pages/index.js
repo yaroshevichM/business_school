@@ -11,6 +11,7 @@ import UsefulFeatures from 'sections/useful-features';
 import Widgets from 'sections/widgets';
 import Pricing from 'sections/pricing';
 import Faq from 'sections/faq';
+import Gallery from 'sections/gallery';
 
 export default function IndexPage() {
   return (
@@ -23,6 +24,7 @@ export default function IndexPage() {
         <IntroVideo />
         <UsefulFeatures />
         <Widgets />
+        <Gallery />
         {/* <Pricing /> */}
         {/* <Faq /> */}
       </Layout>
