@@ -30,17 +30,17 @@ const Gallery = () => {
         <Box as="section" id="reply" variant="section.usefulFeatures">
             <Container>
                 <Box sx={styles.features}>
-                    <Carousel responsive={responsive}>
-                        <div>
-                            <Image src={gallery1} className="video-banner" alt="video banner" styles={{ maxHeight: "20vh" }} />
-                        </div>
-                        <div>
-                            <Image src={gallery2} className="video-banner" alt="video banner" styles={{ maxHeight: "20vh" }} />
-                        </div>
-                        <div>
-                            <Image src={gallery3} className="video-banner" alt="video banner" styles={{ maxHeight: "20vh" }} />
-                        </div>
-                    </Carousel>
+                    {/* <Carousel responsive={responsive}> */}
+                    <div>
+                        <Image src={gallery1} className="video-banner" alt="video banner" sx={styles.image} />
+                    </div>
+                    <div>
+                        <Image src={gallery2} className="video-banner" alt="video banner" sx={styles.image} />
+                    </div>
+                    <div>
+                        <Image src={gallery3} className="video-banner" alt="video banner" sx={styles.image} />
+                    </div>
+                    {/* </Carousel> */}
                 </Box>
             </Container>
         </Box>
@@ -51,12 +51,15 @@ export default Gallery;
 
 const styles = {
     heading: {
-        marginBottom: 80,
+        marginBottom: [60, 60, 60, 80],
     },
     features: {
-        gap: 60,
-        display: ["flex"],
-        justifyContent: ["center"],
-        alignItems: ["center"],
+        gap: ["35px 60px"],
+        display: ["grid", "grid"],
+        gridTemplateColumns: ["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(3, 1fr)"],
     },
+    image: {
+        height: ["100%"],
+        objectFit: ["cover"]
+    }
 };

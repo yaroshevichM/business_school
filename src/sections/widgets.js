@@ -14,7 +14,7 @@ const Widgets = () => {
   const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <Box as="section" id="widgets" variant="section.widgets">
+        <Box as="section" id="book" variant="section.widgets">
             <Modal isOpen={isOpen}>
             <CloseButton
               onClick={() => setIsOpen(false)}

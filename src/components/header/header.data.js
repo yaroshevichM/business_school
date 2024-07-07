@@ -16,7 +16,7 @@ export default [
     label: 'Відгуки',
   },
   {
-    path: '#!',
+    path: '#book',
     label: 'Записатись',
   },
 ];

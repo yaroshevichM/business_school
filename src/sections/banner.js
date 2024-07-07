@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Heading, Text, Button, Image } from "theme-ui";
+import { Link } from 'components/link';
 import banner from "assets/images/banner.png";
 import paypal from "assets/images/paypal.png";
 import google from "assets/images/google.png";
@@ -16,7 +17,7 @@ const Banner = () => {
                             Приєднуйся до спільноти амбітних підлітків і отримай інструменти для створення успішного майбутнього. Стань частиною наступного покоління бізнес-лідерів.
                         </Text>
                         <Button variant="primary" sx={styles.button}>
-                            Почати зараз
+                            <Link path="#book" label="Почати зараз" />
                         </Button>
                         {/* <Box sx={styles.clients}>
               <Image src={paypal} alt="paypal" />
